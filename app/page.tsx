@@ -3,7 +3,7 @@ import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
-  title: "Next.js Enterprise Boilerplate",
+  title: "Have I Been Pwned: Check if your email has been compromised in a data breach",
   twitter: {
     card: "summary_large_image",
   },
@@ -26,12 +26,10 @@ export default function Web() {
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-              Next.js Enterprise Boilerplate
+              ';--have i been pwned?
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
+              Check if your email address is in a data breach
             </p>
             <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
               Get started
@@ -42,7 +40,43 @@ export default function Web() {
             >
               Deploy Now
             </Button>
+            <form class="w-full max-w-lg">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Email address
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="user@domain.com" />
+                    <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                    Last Name
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                    Password
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************" />
+                    <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+                </div>
+              </div>
+            </form>
+            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">Using Have I Been Pwned is subject to <a href="/TermsOfUse" target="_blank">the terms of use</a></p>
+            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
+              <img src="/Content/Images/PasswordManager/1PasswordLogo.svg" alt="1Password Logo" />
+              <span>Generate secure, unique passwords for every account</span>
+              <a href="https://1password.com/haveibeenpwned/" target="_blank">Learn more at 1Password.com</a>
+            </p>
+            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl"><a href="/1Password">Why 1Password?</a></p>
+
+
           </div>
+          
         </div>
       </section>
       <section className="bg-white dark:bg-gray-900">
